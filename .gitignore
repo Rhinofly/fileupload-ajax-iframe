@@ -1,0 +1,14 @@
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## grunt specific files and directories to ignore
+node_modules/
+*.npm-debug.log
+*.tmp
+
+## bower
+bower_components/

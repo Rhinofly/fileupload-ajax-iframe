@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bower_components/dropzone/downloads/css/dropzone.css">
+
+    <style>
+      html, body {
+        font-family: sans-serif;
+      }
+
+      form {
+        border: 1px solid #ccc;
+        background-color: #FCF9EB;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      .clearfix:before,
+      .clearfix:after {
+          content: ' ';
+          display: table;
+      }
+
+      .clearfix:after {
+          clear: both;
+      }
+
+      .form-control {
+        padding: 10px 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: white;
+      }
+
+      .is-404,
+      .is-415,
+      .is-500 {
+        color: red;
+      }
+
+      .is-200,
+      .is-201 {
+        color: green;
+      }
+
+      .is-uploading {
+        background-image: url('images/loading.gif');
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        color: #666;
+        background-size: 12px;
+      }
+
+      .file-name {
+        padding: 5px 20px 5px 0;
+        font-size: 85%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>
+      Upload all images on form submit.
+    </h2>
+    <p>Show results through events.</p>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-1">
+
+      <div class="form-control">
+        <input type="file" name="file" id="file1" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file2" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file3" multiple>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>
+      Upload images on file input change.
+    </h2>
+    <p>Show results through callbacks</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-2">
+
+      <div class="form-control">
+        <input type="file" name="file" id="file1" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file2" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file3" multiple>
+      </div>
+
+    </form>
+
+    <hr>
+
+    <h2>
+      Upload images with dropzone
+    </h2>
+    <p>
+      Use Uploader class as fallback for IE9
+    </p>
+    <form action="upload.php" id="uploader-3" class="dropzone">
+      <div class="fallback">
+        <div class="form-control">
+          <input type="file" name="file" id="file1">
+        </div>
+
+        <div class="form-control">
+          <input type="file" name="file" id="file2">
+        </div>
+
+        <div class="form-control">
+          <input type="file" name="file" id="file3">
+        </div>
+      </div>
+    </form>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+    <script src="../lib/UploaderWithAjax.js"></script>
+    <script src="../lib/UploaderWithIframe.js"></script>
+    <script src="../lib/Uploader.js"></script>
+    <script src="../bower_components/dropzone/downloads/dropzone.min.js"></script>
+    <script src="javascripts/upload-files-on-form-submit.js"></script>
+    <script src="javascripts/upload-files-on-file-input-change.js"></script>
+    <script src="javascripts/with-dropzone-interface.js"></script>
+  </body>
+</html>

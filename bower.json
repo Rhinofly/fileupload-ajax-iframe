@@ -1,0 +1,32 @@
+{
+  "name": "fileupload-ajax-iframe",
+  "version": "0.1.0",
+  "homepage": "false",
+  "authors": [
+    "Joost Kiens <jkiens@rhinofly.nl>"
+  ],
+  "description": "Very basic file uploader which works with FormData if the browser supports it, otherwise falls back to uploading through an iframe. Note: this is meant to be extended as needed.",
+  "main": "lib/Uploader.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "ie9",
+    "file upload",
+    "image upload",
+    "upload",
+    "iframe",
+    "FormData"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "dropzone": "~3.10.2"
+  }
+}
