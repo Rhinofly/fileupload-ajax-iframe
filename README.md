@@ -64,7 +64,8 @@ _Note: an instance of Uploader is required for each form._
     </script>
 
 Then call one of the two public methods:
-- **doUploadForm** - Accepts no arguments, submits all file inputs.
+
+**doUploadForm** - Accepts no arguments, submits all file inputs.
 
     <script>
         var $form = $('form');
@@ -76,7 +77,8 @@ Then call one of the two public methods:
     </script>
 
 Or:
-- **doUploadSingleInput** - Accepts a jQuery object of a single file input as argument, submits the file(s) selected in a single file input.
+
+**doUploadSingleInput** - Accepts a jQuery object of a single file input as argument, submits the file(s) selected in a single file input.
 
 
 
