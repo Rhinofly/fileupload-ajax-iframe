@@ -12,8 +12,7 @@ $(function () {
   // Bind events
   $form1.on('upload.form.start', function (e) {
     $form1.prepend('<h3>Loading...</h3>');
-    $('.error').remove();
-    $('.success').remove();
+    $('.file-name').remove();
   });
 
   $form1.on('upload.form.complete', function (e) {

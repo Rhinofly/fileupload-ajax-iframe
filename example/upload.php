@@ -12,20 +12,18 @@ function showSuccess($uploaded) {
     $file = $uploaded[0];
     $arr = explode('_', $file, 2);
     echo '{
-        "status": "201",
-        "filename": "' . $arr[1] . '",
+        "status": 201,
         "id": "' . $arr[0] . '",
-        "responseText": "success",
-        "inputId": "' . $uploaded[2] . '"
+        "responseText": "success"
     }';
 }
 
 function showError($uploaded) {
     header('HTTP/1.1 415 BAD REQUEST', true, 415);
     echo '{
-        "status": "415",
-        "responseText": "' .$uploaded[1] . '",
-        "inputId": "' . $uploaded[2] . '"
+        "status": 415,
+        "id": null,
+        "responseText": "' .$uploaded[1] . '"
     }';
 }
 
