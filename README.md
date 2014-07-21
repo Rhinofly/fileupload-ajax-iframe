@@ -70,7 +70,7 @@ Then call one of the two public methods:
     <script>
         var $form = $('form');
         var uploader = new Uploader({ $form: $form });
-
+        
         $form.on('submit', function () {
             uploader.doUploadForm();
         });
@@ -83,7 +83,7 @@ Or:
     <script>
         var $form = $('form');
         var uploader = new Uploader({ $form: $form });
-
+        
         $('input[type=file]', $form).on('change', function () {
             uploader.doUploadSingleInput($(this));
         });
