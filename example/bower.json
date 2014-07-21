@@ -1,0 +1,13 @@
+{
+  "name": "fileupload-ajax-iframe-example",
+  "version": "0.1.0",
+  "homepage": "false",
+  "authors": [
+    "Joost Kiens <jkiens@rhinofly.nl>"
+  ],
+  "private": true,
+  "description": "Examples for fileupload-ajax-iframe.",
+  "devDependencies": {
+    "dropzone": "~3.10.2"
+  }
+}

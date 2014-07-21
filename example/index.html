@@ -72,7 +72,7 @@
     </h2>
     <p>Show results through events.</p>
 
-    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-1">
+    <form action="/upload" method="post" enctype="multipart/form-data" id="uploader-1">
 
       <div class="form-control">
         <input type="file" name="file" id="file1" multiple>
@@ -95,7 +95,7 @@
       Upload files on file input change.
     </h2>
     <p>Show results through callbacks</p>
-    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-2">
+    <form action="/upload" method="post" enctype="multipart/form-data" id="uploader-2">
 
       <div class="form-control">
         <input type="file" name="file" id="file1" multiple>
@@ -117,7 +117,7 @@
       Force files to upload through Iframe on file input change.
     </h2>
     <p>Show results through callbacks</p>
-    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-3">
+    <form action="/upload" method="post" enctype="multipart/form-data" id="uploader-3">
 
       <div class="form-control">
         <input type="file" name="file" id="file1" multiple>
@@ -141,7 +141,7 @@
     <p>
       Use Uploader class as fallback for IE9
     </p>
-    <form action="upload.php" id="uploader-4" class="dropzone">
+    <form action="/upload" id="uploader-4" class="dropzone">
       <div class="fallback">
         <div class="form-control">
           <input type="file" name="file" id="file1">
@@ -160,7 +160,7 @@
     <!-- Include jQuery, required -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 
-    <!--  Incluce the 3 Uploader classes, concatenate if necessary -->
+    <!--  Include the 3 Uploader classes, concatenate if necessary -->
     <script src="../lib/UploaderWithAjax.js"></script>
     <script src="../lib/UploaderWithIframe.js"></script>
     <script src="../lib/Uploader.js"></script>

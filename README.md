@@ -1,4 +1,4 @@
-Asynchrounous File Uploader
+Asynchronous File Uploader
 =========
 
 Upload files asynchronously through AJAX if supported. Older browsers post through an iframe.
@@ -41,7 +41,7 @@ The basics
 The uploader consists of 3 classes each in their own file:
 - **Uploader.js** - This class is the only one that needs to be instantiated. The next two classes will be instantiated by this class as needed.
 - **UploaderWithAjax.js** - This class is used to upload a file through AJAX. This uses the FormData API.
-- **UploaderWithIframe.js** - This class is used by older browsers (Only IE9 is tested). This has no support for the ```multiple``` attribute, which is not supported by IE9 anyway. Each file input is moved into its own invisible form, and posts into a hidden iframe by using the deprecated ```target``` attribute. The file input is moved back to its original position. The iframe posts synchronously to the server. When the server has responded, this JSON response is parsed and the iframe and newly created form is removed from the DOM. Ugly? You bet!
+- **UploaderWithIframe.js** - This class is used by older browsers (Only IE8 & IE9 is tested). This has no support for the ```multiple``` attribute, which is not supported by IE8 & IE9 anyway. Each file input is moved into its own invisible form, and posts into a hidden iframe by using the deprecated ```target``` attribute. The file input is moved back to its original position. The iframe posts synchronously to the server. When the server has responded, this JSON response is parsed and the iframe and newly created form are removed from the DOM. Ugly? You bet!
 
 Usage
 ---
@@ -184,10 +184,15 @@ To get started with the examples, first run ```bower install``` to download [dro
 
 Tested with:
 ---
-- IE9,
-- Chrome 36,
+- IE8, IE9 (through iframe)
+- IE10
+- Chrome 36
 - Firefox 30
+- Opera 20
 
+TODO
+---
+- Option for max concurrent uploads
 
 Version
 ----

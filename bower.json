@@ -1,7 +1,7 @@
 {
   "name": "fileupload-ajax-iframe",
   "version": "0.1.0",
-  "homepage": "false",
+  "homepage": "https://github.com/Rhinofly/fileupload-ajax-iframe",
   "authors": [
     "Joost Kiens <jkiens@rhinofly.nl>"
   ],
@@ -24,9 +24,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "dropzone": "~3.10.2"
-  }
+    "tests",
+    "example"
+  ]
 }
