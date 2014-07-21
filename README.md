@@ -67,6 +67,7 @@ Then call one of the two public methods:
 - **doUploadForm** - Accepts no arguments, submits all file inputs.
 
 
+
     <script>
         var $form = $('form');
         var uploader = new Uploader({ $form: $form });
@@ -78,6 +79,7 @@ Then call one of the two public methods:
 
 Or:
 - **doUploadSingleInput** - Accepts a jQuery object of a single file input as argument, submits the file(s) selected in a single file input.
+
 
 
     <script>
