@@ -19,6 +19,7 @@
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 8px;
+        max-width: 500px;
       }
 
       .clearfix:before,
@@ -67,7 +68,7 @@
   <body>
 
     <h2>
-      Upload all images on form submit.
+      Upload all files on form submit.
     </h2>
     <p>Show results through events.</p>
 
@@ -91,10 +92,32 @@
     <hr>
 
     <h2>
-      Upload images on file input change.
+      Upload files on file input change.
     </h2>
     <p>Show results through callbacks</p>
     <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-2">
+
+      <div class="form-control">
+        <input type="file" name="file" id="file1" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file2" multiple>
+      </div>
+
+      <div class="form-control">
+        <input type="file" name="file" id="file3" multiple>
+      </div>
+
+    </form>
+
+    <hr>
+
+    <h2>
+      Force files to upload through Iframe on file input change.
+    </h2>
+    <p>Show results through callbacks</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data" id="uploader-3">
 
       <div class="form-control">
         <input type="file" name="file" id="file1" multiple>
@@ -118,7 +141,7 @@
     <p>
       Use Uploader class as fallback for IE9
     </p>
-    <form action="upload.php" id="uploader-3" class="dropzone">
+    <form action="upload.php" id="uploader-4" class="dropzone">
       <div class="fallback">
         <div class="form-control">
           <input type="file" name="file" id="file1">
@@ -134,14 +157,19 @@
       </div>
     </form>
 
+    <!-- Include jQuery, required -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 
+    <!--  Incluce the 3 Uploader classes, concatenate if necessary -->
     <script src="../lib/UploaderWithAjax.js"></script>
     <script src="../lib/UploaderWithIframe.js"></script>
     <script src="../lib/Uploader.js"></script>
-    <script src="../bower_components/dropzone/downloads/dropzone.min.js"></script>
+
+    <!-- Examples -->
     <script src="javascripts/upload-files-on-form-submit.js"></script>
     <script src="javascripts/upload-files-on-file-input-change.js"></script>
+    <script src="javascripts/upload-files-with-iframe-on-file-input-change.js"></script>
+    <script src="../bower_components/dropzone/downloads/dropzone.min.js"></script>
     <script src="javascripts/with-dropzone-interface.js"></script>
   </body>
 </html>
