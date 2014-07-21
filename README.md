@@ -112,7 +112,7 @@ These options are supported:
 - **file** - The ```File``` object. Note: when submitting through an iframe, only the name property exists.
 - **$fileInput** - the jQuery object referencing the DOM element of the relevant file input.
 
-**Example of instance with all options **
+**Example of instance with all options**
 
 
     <script>
@@ -175,6 +175,12 @@ Events
         });
     </script>
 
+
+Examples
+---
+Examples are included in the examples folder, to run the examples you'll want to run them on a server which runs PHP (the upload script is in PHP). This writes the uploaded files to your server's ```/tmp``` directory. I suppose this doesn't work on Windows.
+
+To get started with the examples, first run ```bower install``` to download [dropzone](http://www.dropzonejs.com).
 
 Tested with:
 ---
