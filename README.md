@@ -66,8 +66,6 @@ _Note: an instance of Uploader is required for each form._
 Then call one of the two public methods:
 - **doUploadForm** - Accepts no arguments, submits all file inputs.
 
-
-
     <script>
         var $form = $('form');
         var uploader = new Uploader({ $form: $form });
